@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Account || Song I Like</title>
+    <meta property="og:url"
+          content="https://tooeasy2get2points.herokuapp.com"/>
+    <meta property="og:type" content="song"/>
+    <meta property="og:title" content="Register Account || Song I Like"/>
+    <meta property="og:description" content="Create an account and share your song"/>
+    <meta property="og:image"
+          content="https://tooeasy2get2points.herokuapp.com/img/share-home.png"/>
+    <link rel="icon" type="image/png" href="img/myfavicon.png">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<h1>Register form</h1>
+<ul>
+    <!--<li><a href="register.html" title="Register member">Register</a></li>-->
+    <!--<li><a href="login.html" title="Member login">Login</a></li>-->
+    <!--<li><a href="save-song.html" title="Create Song">Create Song</a></li>-->
+    <!--<li><a href="list-song.html" title="Latest Song">Latest Song</a></li>-->
+    <!--<li><a href="my-song.html" title="My Song">My Song</a></li>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.html">Register <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="save-song.html">Create Song</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="list-song.html">Latest Song</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my-song.html">My Song</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</ul>
+<hr>
+<div class="container-fluid">
+    <div id="summary" class="error"></div>
+    <form action="" name="register-form" id="register-form">
+        <div class="col-3">
+            <label>First Name</label>
+            <input class="form-control" type="text" name="firstName">
+        </div>
+        <div class="col-3">
+            <label>Last Name</label>
+            <input class="form-control" type="text" name="lastName">
+        </div>
+        <div class="col-3">
+            <label>Password</label>
+            <input class="form-control" type="password" name="password">
+        </div>
+        <div class="col-3">
+            <label>Confirm Password</label>
+            <input class="form-control" type="password" name="confirm-password">
+        </div>
+        <div class="col-3">
+            <label>Address</label>
+            <textarea class="form-control" name="address" cols="10" rows="5"></textarea>
+        </div>
+        <div class="col-3">
+            <label>Phone</label>
+            <input class="form-control" type="text" name="phone">
+        </div>
+        <div class="col-3">
+            <label>Avatar</label>
+            <input class="form-control" type="text" name="avatar">
+        </div>
+        <div class="col-3">
+            <label>Gender</label>
+            <select name="gender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <label>Email</label>
+            <input class="form-control" type="text" name="email">
+        </div>
+        <div class="col-3">
+            <label>Birthday</label>
+            <input class="form-control" type="date" name="birthday">
+        </div>
+        <div class="form-group">
+            <label>&nbsp;</label>
+            <input class="btn btn-danger" type="submit" name="btn-submit" value="Submit">
+            <input class="btn btn-dark" type="reset" name="btn-reset" value="Reset">
+        </div>
+    </form>
+</div>
+<script src="js/library/jquery-3.3.1.min.js"></script>
+<script src="js/library/bootstrap.min.js"></script>
+<script src="js/library/jquery.validate.min.js"></script>
+<script src="js/library/additional-methods.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/register-jquery.js"></script>
+</body>
+</html>
